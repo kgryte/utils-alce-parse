@@ -23,13 +23,7 @@ var parse = require( 'utils-alce-parse' );
 Attempts to parse an input `string` as [ALCE](https://github.com/walmartlabs/ALCE)
 
 ``` javascript
-var out = parse( '{
-	// Comment...
-	"beep": "boop",
-
-	/* Regex: */
-	"re": /\./
-}' );
+var out = parse( '{// Comment...\n"beep": "boop",\n/* Regex: */\n"re": /\./}' );
 // returns {'beep':'boop','re':/\./}
 
 out = parse( 'beep boop' );
